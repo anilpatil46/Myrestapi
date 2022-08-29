@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/anilpatil46/Myrestapi.git'
+                sh '/usr/bin/chmod o+x mvn*'
                 sh './mvnw clean compile'
                 // bat '.\\mvnw clean compile'
             }
