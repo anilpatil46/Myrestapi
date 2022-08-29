@@ -20,7 +20,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './mvnw test'
+                //sh './mvnw test'
+                sh 'echo "Done  test"'
                 // bat '.\\mvnw test'
             }
 
